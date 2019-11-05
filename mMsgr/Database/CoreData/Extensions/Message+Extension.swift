@@ -145,7 +145,7 @@ extension Message {
         }
     }
     var videoThumbnilURL: URL? {
-        return msgType == MsgType.Video.rawValue ? DownloadManager.localFileURLFor(id.uuidString+id.uuidString) : nil
+        return msgType == MsgType.Video.rawValue ? docURL.appendingPathComponent(id.uuidString+id.uuidString) : nil
     }
 }
 extension Storage {

@@ -425,7 +425,7 @@ extension MessageSender {
                 let originalData = originalResizedImage.pngData()
                 else { return }
             
-            guard let originalUrl = DownloadManager.localFileURLFor(msgId.uuidString) else { return }
+            let originalUrl = docURL.appendingPathComponent(msgId.uuidString)
             let originalSize = originalResizedImage.size
             let width = Int(230)
             let height = Int(ceil(CGFloat(width) / originalSize.width * originalSize.height))
@@ -464,7 +464,7 @@ extension MessageSender {
                 else { return }
             
     
-            guard let originalUrl = DownloadManager.localFileURLFor(msgId.uuidString+DataType.MOV.rawValue) else { return }
+            let originalUrl = docURL.appendingPathComponent(msgId.uuidString+DataType.MOV.rawValue)
             
             do {
                 try videoData.write(to: originalUrl, options: .atomic)
@@ -490,9 +490,8 @@ extension MessageSender {
             guard let `self` = self else { return }
             let msgId = UUID()
             
-            guard
-                let audioData = NSData(contentsOf: url) else { return }
-            guard let originalUrl = DownloadManager.localFileURLFor(msgId.uuidString+DataType.M4A.rawValue) else { return }
+            guard let audioData = NSData(contentsOf: url) else { return }
+            let originalUrl = docURL.appendingPathComponent(msgId.uuidString+DataType.M4A.rawValue)
             do {
                 try audioData.write(to: originalUrl, options: .atomic)
                 self.create(roomID, type: .Audio, id: msgId, text: MsgType.Audio.text, translatedText: nil, (0, 0))

@@ -40,10 +40,6 @@ extension CharacterSet {
         return ""
     }
     
-    var myanmarUnicodeSegments: [String]? {
-        let taggedTokens = tagger.tagWordsInText(text: self, scheme: NSLinguisticTagScheme.lexicalClass.rawValue, options: [.omitPunctuation])
-        return taggedTokens.map{ $0.token }
-    }
     
     var myanmarSegments: [String] {
         let regex = RegexParser.regularExpression(for: RegexParser.myanmarWordsBreakerPattern)

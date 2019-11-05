@@ -110,7 +110,7 @@ open class AutocompleteManager: NSObject, UITextViewDelegate, UITableViewDelegat
     private var currentAutocompleteOptions: [Friend] {
         guard let session = currentSession, !session.filter.isEmpty else { return [] }
         let completions = session.prefix == "@" ? friends : []
-        return completions.filter { $0.displayName.contains(session.filter, caseSensitive: isCaseSensitive) }.slice(length: 5)
+        return completions.filter { $0.displayName.contains(session.filter, caseSensitive: isCaseSensitive) }
     }
 
     private var previousSession: AutocompleteSession?
