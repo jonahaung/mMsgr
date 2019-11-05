@@ -47,7 +47,6 @@
 		473D223C1FE4B07B00F066B7 /* AlertPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473D223B1FE4B07B00F066B7 /* AlertPresentable.swift */; };
 		473D22561FE4B12600F066B7 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473D22551FE4B12600F066B7 /* NavigationController.swift */; };
 		473D75492312035F002EE503 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4717F9231FEF216D00ABF1EE /* PersistenceManager.swift */; };
-		473D98E0231824E300DE152B /* ChatModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 473D98DB231824E200DE152B /* ChatModel.xcdatamodeld */; };
 		474157E72321321500CC45A2 /* BadgeStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474157E62321321500CC45A2 /* BadgeStackView.swift */; };
 		47447D3E21DBAA5A00ED9A13 /* Analyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47447D3521DBAA4F00ED9A13 /* Analyzer.swift */; };
 		47447D4221DBAA5A00ED9A13 /* Seed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47447D3921DBAA5500ED9A13 /* Seed.swift */; };
@@ -83,6 +82,7 @@
 		4756861F231F60C20013AA2E /* MySpacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4756861E231F60C20013AA2E /* MySpacer.swift */; };
 		4756C1482312BD0100CD3AC6 /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4756C1472312BD0100CD3AC6 /* FloatingButton.swift */; };
 		47624447233049780044B7B2 /* SerialTaskQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47624446233049780044B7B2 /* SerialTaskQueue.swift */; };
+		47673FFB23711137003170F9 /* ChatModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 47673FF923711136003170F9 /* ChatModel.xcdatamodeld */; };
 		476CE6CE21B8C17C00F04D02 /* GifCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476CE6CD21B8C17C00F04D02 /* GifCell.swift */; };
 		4774D6DC1FF2E96A002F6C83 /* Bool+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4774D6DB1FF2E96A002F6C83 /* Bool+Extensions.swift */; };
 		478AAC232048F46D000B0797 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478AAC222048F46D000B0797 /* UIColor+Ext.swift */; };
@@ -389,10 +389,6 @@
 		473B5AD6230E8948003F98C7 /* ChatFrcManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatFrcManager.swift; sourceTree = "<group>"; };
 		473D223B1FE4B07B00F066B7 /* AlertPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertPresentable.swift; sourceTree = "<group>"; };
 		473D22551FE4B12600F066B7 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
-		473D98DC231824E200DE152B /* ChatModel 17.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ChatModel 17.xcdatamodel"; sourceTree = "<group>"; };
-		473D98DD231824E200DE152B /* ChatModel 18.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ChatModel 18.xcdatamodel"; sourceTree = "<group>"; };
-		473D98DE231824E200DE152B /* ChatModel 16.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ChatModel 16.xcdatamodel"; sourceTree = "<group>"; };
-		473D98DF231824E200DE152B /* ChatModel 19.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ChatModel 19.xcdatamodel"; sourceTree = "<group>"; };
 		474157E62321321500CC45A2 /* BadgeStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeStackView.swift; sourceTree = "<group>"; };
 		47447D3421DBAA4D00ED9A13 /* DecisionTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecisionTree.swift; sourceTree = "<group>"; };
 		47447D3521DBAA4F00ED9A13 /* Analyzer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Analyzer.swift; sourceTree = "<group>"; };
@@ -430,6 +426,7 @@
 		4756861E231F60C20013AA2E /* MySpacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySpacer.swift; sourceTree = "<group>"; };
 		4756C1472312BD0100CD3AC6 /* FloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
 		47624446233049780044B7B2 /* SerialTaskQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerialTaskQueue.swift; sourceTree = "<group>"; };
+		47673FFA23711136003170F9 /* ChatModel 20.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ChatModel 20.xcdatamodel"; sourceTree = "<group>"; };
 		476CE6CD21B8C17C00F04D02 /* GifCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifCell.swift; sourceTree = "<group>"; };
 		4774D6DB1FF2E96A002F6C83 /* Bool+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+Extensions.swift"; sourceTree = "<group>"; };
 		478AAC222048F46D000B0797 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
@@ -492,7 +489,6 @@
 		47C5C061228AA90000EFB778 /* SubtitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleTableViewCell.swift; sourceTree = "<group>"; };
 		47C5C063228AA99800EFB778 /* DefaultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTableViewCell.swift; sourceTree = "<group>"; };
 		47C5C065228AAAB600EFB778 /* RightSubtitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightSubtitleTableViewCell.swift; sourceTree = "<group>"; };
-		47C5F55A235764A100DF1A5D /* ChatModel 20.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ChatModel 20.xcdatamodel"; sourceTree = "<group>"; };
 		47C5F55B235774CF00DF1A5D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		47C5F55D23579C0500DF1A5D /* MyanmarPhoneValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyanmarPhoneValidator.swift; sourceTree = "<group>"; };
 		47C65216228F851B00D49336 /* AppViewController+DisplayName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppViewController+DisplayName.swift"; sourceTree = "<group>"; };
@@ -805,11 +801,11 @@
 		472E34311F875E3C005C52A7 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				47673FF923711136003170F9 /* ChatModel.xcdatamodeld */,
 				474D2507233FD6E5003AE744 /* Friend+CoreDataProperties.swift */,
 				474D2504233FD6E5003AE744 /* Friend+CoreDataClass.swift */,
 				474D2506233FD6E5003AE744 /* Message+CoreDataClass.swift */,
 				474D2505233FD6E5003AE744 /* Message+CoreDataProperties.swift */,
-				473D98DB231824E200DE152B /* ChatModel.xcdatamodeld */,
 				E7E18E0C20F482E600721CDA /* Extensions */,
 			);
 			path = CoreData;
@@ -2085,6 +2081,7 @@
 				47F851DD1FE6ADA200598004 /* Date+Ext.swift in Sources */,
 				E7B1332822427D050021E554 /* KeyboardManager.swift in Sources */,
 				479F54ED230EEBCF00942AE4 /* ContactsSyncOperation.swift in Sources */,
+				47673FFB23711137003170F9 /* ChatModel.xcdatamodeld in Sources */,
 				473D223C1FE4B07B00F066B7 /* AlertPresentable.swift in Sources */,
 				4750AD04231CD1C200CFCAC3 /* Int64+Ext.swift in Sources */,
 				47BE89A722BC19F20002118D /* AudioCell.swift in Sources */,
@@ -2103,7 +2100,6 @@
 				47B937CE22931E0600F056EF /* Login+Email.swift in Sources */,
 				47EBA8712289A8100037BCBB /* LocaleStore.swift in Sources */,
 				47F851D91FE6A89600598004 /* UIImage+Ext.swift in Sources */,
-				473D98E0231824E300DE152B /* ChatModel.xcdatamodeld in Sources */,
 				47EBA8272289A7180037BCBB /* TextField.swift in Sources */,
 				E76FC60E20E7AABA00E9A90C /* ChatViewController+Setup.swift in Sources */,
 				47E55CCE21B5FDF800281DAA /* SwiftyGifManager.swift in Sources */,
@@ -2577,16 +2573,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		473D98DB231824E200DE152B /* ChatModel.xcdatamodeld */ = {
+		47673FF923711136003170F9 /* ChatModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				47C5F55A235764A100DF1A5D /* ChatModel 20.xcdatamodel */,
-				473D98DC231824E200DE152B /* ChatModel 17.xcdatamodel */,
-				473D98DD231824E200DE152B /* ChatModel 18.xcdatamodel */,
-				473D98DE231824E200DE152B /* ChatModel 16.xcdatamodel */,
-				473D98DF231824E200DE152B /* ChatModel 19.xcdatamodel */,
+				47673FFA23711136003170F9 /* ChatModel 20.xcdatamodel */,
 			);
-			currentVersion = 47C5F55A235764A100DF1A5D /* ChatModel 20.xcdatamodel */;
+			currentVersion = 47673FFA23711136003170F9 /* ChatModel 20.xcdatamodel */;
 			path = ChatModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

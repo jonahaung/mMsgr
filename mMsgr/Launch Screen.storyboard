@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dot3" translatesAutoresizingMaskIntoConstraints="NO" id="Wk9-fa-Yvb">
+                                <rect key="frame" x="115" y="229" width="50" height="50"/>
+                                <color key="tintColor" name="watermelon"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="FV1-Zk-2Pb"/>
+                                    <constraint firstAttribute="width" constant="50" id="FXe-po-yQR"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mMsgr" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKq-8r-9YO">
+                                <rect key="frame" x="102.5" y="302" width="170" height="63"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="58"/>
+                                <color key="textColor" name="blue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dot3" translatesAutoresizingMaskIntoConstraints="NO" id="GWU-la-Bwd">
+                                <rect key="frame" x="199" y="402" width="50" height="50"/>
+                                <color key="tintColor" name="greenApple"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ubQ-RO-rH1"/>
+                                    <constraint firstAttribute="width" constant="50" id="uiF-Yi-7eN"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eKq-8r-9YO" firstAttribute="leading" secondItem="Wk9-fa-Yvb" secondAttribute="trailing" constant="-62.5" id="E7S-XQ-SJF"/>
+                            <constraint firstItem="GWU-la-Bwd" firstAttribute="top" secondItem="eKq-8r-9YO" secondAttribute="bottom" constant="37" id="HnT-O4-kKg"/>
+                            <constraint firstItem="GWU-la-Bwd" firstAttribute="leading" secondItem="eKq-8r-9YO" secondAttribute="trailing" constant="-73.5" id="cXs-t8-Bxl"/>
+                            <constraint firstItem="eKq-8r-9YO" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="l5k-78-cqd"/>
+                            <constraint firstItem="eKq-8r-9YO" firstAttribute="top" secondItem="Wk9-fa-Yvb" secondAttribute="bottom" constant="23" id="nIb-at-2MB"/>
+                            <constraint firstItem="eKq-8r-9YO" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="uvA-xB-Nc3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dot3" width="72" height="72"/>
+        <namedColor name="blue">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="greenApple">
+            <color red="0.41568627450980394" green="0.69019607843137254" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="watermelon">
+            <color red="0.89803921568627454" green="0.31372549019607843" blue="0.22352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

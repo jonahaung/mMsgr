@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15400" systemVersion="19B86a" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="ChatModel">
+    <entity name="Dic" representedClassName="Dic" syncable="YES" codeGenerationType="class">
+        <attribute name="def" optional="YES" attributeType="String"/>
+        <attribute name="info" optional="YES" attributeType="String"/>
+        <attribute name="lastAccessedDate" attributeType="Date" defaultDateTimeInterval="570636600" usesScalarValueType="NO"/>
+        <attribute name="length" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rank" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="text" optional="YES" attributeType="String"/>
+        <attribute name="zawGyi" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Friend" representedClassName="Friend" syncable="YES">
+        <attribute name="displayName" attributeType="String" defaultValueString="&quot;&quot;"/>
+        <attribute name="lastAccessedDate" optional="YES" attributeType="Date" defaultDateTimeInterval="590311980" usesScalarValueType="NO"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String"/>
+        <attribute name="photoURL" optional="YES" attributeType="URI"/>
+        <attribute name="pushId" optional="YES" attributeType="String"/>
+        <attribute name="state" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="uid" attributeType="String" spotlightIndexingEnabled="YES"/>
+        <relationship name="messages" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Message" inverseName="sender" inverseEntity="Message"/>
+        <relationship name="room" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Room" inverseName="member" inverseEntity="Room"/>
+        <relationship name="rooms" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Room" inverseName="members" inverseEntity="Room"/>
+    </entity>
+    <entity name="Message" representedClassName="Message" syncable="YES">
+        <attribute name="date" attributeType="Date" defaultDateTimeInterval="587637720" usesScalarValueType="NO"/>
+        <attribute name="hasRead" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="isSender" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
+        <attribute name="language" optional="YES" attributeType="String"/>
+        <attribute name="language2" optional="YES" attributeType="String"/>
+        <attribute name="msgState" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="msgType" attributeType="Integer 16" defaultValueString="1" usesScalarValueType="YES"/>
+        <attribute name="section" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="text" attributeType="String" defaultValueString="text"/>
+        <attribute name="text2" optional="YES" attributeType="String"/>
+        <attribute name="x" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="y" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="lastMsgPoiter" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Room" inverseName="lastMsg" inverseEntity="Room"/>
+        <relationship name="room" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Room" inverseName="messages" inverseEntity="Room"/>
+        <relationship name="sender" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Friend" inverseName="messages" inverseEntity="Friend"/>
+    </entity>
+    <entity name="Pronounce" representedClassName="Pronounce" syncable="YES" codeGenerationType="class">
+        <attribute name="pronounce" attributeType="String" defaultValueString="nil"/>
+        <attribute name="word" attributeType="String" defaultValueString="nil"/>
+    </entity>
+    <entity name="Room" representedClassName="Room" syncable="YES" codeGenerationType="class">
+        <attribute name="canTranslate" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" defaultValueString="id"/>
+        <attribute name="isGroup" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="msgsCount" optional="YES" attributeType="Integer 64" derived="YES" derivationExpression="messages.@count" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="themeValue" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="lastMsg" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Message" inverseName="lastMsgPoiter" inverseEntity="Message"/>
+        <relationship name="member" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Friend" inverseName="room" inverseEntity="Friend"/>
+        <relationship name="members" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Friend" inverseName="rooms" inverseEntity="Friend"/>
+        <relationship name="messages" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Message" inverseName="room" inverseEntity="Message"/>
+    </entity>
+    <entity name="Translate" representedClassName="Translate" syncable="YES" codeGenerationType="class">
+        <attribute name="destination" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="source" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Dic" positionX="-361.90234375" positionY="-187.1796875" width="128" height="148"/>
+        <element name="Friend" positionX="-233.4453125" positionY="415.65234375" width="128" height="193"/>
+        <element name="Message" positionX="-0.4140625" positionY="135.21875" width="128" height="283"/>
+        <element name="Pronounce" positionX="-188.75" positionY="-137.71875" width="128" height="73"/>
+        <element name="Room" positionX="-1154.09765625" positionY="-157.3984375" width="128" height="193"/>
+        <element name="Translate" positionX="-241.75390625" positionY="15.21875" width="128" height="88"/>
+    </elements>
+</model>
