@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>mMsgr</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleGetInfoString</key>
+	<string></string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.566451945613-mfcmh974gimgqkfdt01h9f9elp265lok</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>mMsgr needs to access your Media Library. Your permission for use of Media Library is needed so that you will be able to send Video Messages.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>mMsgr needs to access your Camera. Your permission for use of Camera is needed so that you will be able to upload your profile photo or send Photo Messages.</string>
+	<key>NSContactsUsageDescription</key>
+	<string>mMsgr needs to access your phone's contacts.. For more information about our Privacy Policy, please go to app "Settings" -&gt; "Privacy Policy"</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>mMsgr needs to access your Location Service. Your permission for use of locaion service is needed so that you will be able to send Location Messages. For more information about our 'Privacy Policy', please go to app 'Settings' -&gt; 'Privacy Policy'.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>mMsgr needs to access your Location Service. Your permission for use of locaion service is needed so that you will be able to send Location Messages. For more information about our 'Privacy Policy', please go to app 'Settings' -&gt; 'Privacy Policy'.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>mMsgr needs to access your Microphone. Your permission for use of Microphone is needed so that you will be able to use Speech Recognition or send Audio Messages.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>mMsgr needs to access your Photo Library. Your permission for use of Photo Library is needed so that you will be able to upload your profile photo or send Photo Messages.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>mMsgr needs to access your Photo Library. Your permission for use of Photo Library is needed so that you will be able to upload your profile photo or send Photo Messages.</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>mMsgrr will use Speech Recognition Service</string>
+	<key>OneSignal_disable_badge_clearing</key>
+	<false/>
+	<key>OneSignal_require_privacy_consent</key>
+	<false/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>SF-Pro-Display-Regular.otf</string>
+		<string>NanKhone Web Pro.ttf</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>Launch Screen</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UIStatusBarHidden</key>
+	<false/>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleDefault</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportsDocumentBrowser</key>
+	<false/>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<true/>
+	<key>UTExportedTypeDeclarations</key>
+	<array>
+		<dict/>
+	</array>
+</dict>
+</plist>

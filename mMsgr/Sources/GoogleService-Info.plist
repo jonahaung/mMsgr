@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>566451945613-mfcmh974gimgqkfdt01h9f9elp265lok.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.566451945613-mfcmh974gimgqkfdt01h9f9elp265lok</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>566451945613-07thhe50u0f51nava9lsrtqhci393u91.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCxMxq86PmewlS_rXWRSluzWOkNb7vU97s</string>
+	<key>GCM_SENDER_ID</key>
+	<string>566451945613</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.jonahaung.mMsgr</string>
+	<key>PROJECT_ID</key>
+	<string>mmsgr-1b7a6</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mmsgr-1b7a6.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:566451945613:ios:413ddae81b936b06</string>
+	<key>DATABASE_URL</key>
+	<string>https://mmsgr-1b7a6.firebaseio.com</string>
+</dict>
+</plist>
