@@ -121,13 +121,9 @@ extension ChatViewController: InputBarDelegate {
             _ = PresentVideoLibrary(target: self, edit: true)
             
         case .TapPhotoCamera:
-           
-            _ = PresentPhotoCamera(target: self, edit: true)
-            
+            MediaPicker_OpenCamera(.PhotoCamera)
         case .TapVideoCamera:
-            
-            _ = PresentVideoCamera(target: self, edit: true)
-            
+            MediaPicker_OpenCamera(.VideoCamera)
         case  .TapFace:
             
             let smileController = SmaileController()

@@ -11,12 +11,7 @@ import UIKit
 
 public extension UIFont {
     
-    static func taggedFont(for name: String, with size: CGFloat) -> UIFont {
-        if let font = UIFont(name: name, size: size) {
-            return font
-        }
-        return UIFont.systemFont(ofSize: size, weight: .regular)
-    }
+    
     
     
     static func applyCurrentTraitsCollection() {

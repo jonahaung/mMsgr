@@ -9,48 +9,38 @@
 import UIKit
 import MobileCoreServices
 
-
-
-enum CameraType {
-    case PhotoLibrary
-    case PhotoCamera
-    case VideoLibrary
-    case VideoCamera
-    case None
-}
-
-func PresentPhotoCamera(target: Any, edit: Bool) -> Bool {
-    
-    let type = kUTTypeImage as String
-    
-    if (UIImagePickerController.isSourceTypeAvailable(.camera)) {
-        if let availableMediaTypes = UIImagePickerController.availableMediaTypes(for: .camera) {
-            if (availableMediaTypes.contains(type)) {
-                
-                let imagePicker = UIImagePickerController()
-                imagePicker.mediaTypes = [type]
-                imagePicker.sourceType = .camera
-                
-                if (UIImagePickerController.isCameraDeviceAvailable(.rear)) {
-                    imagePicker.cameraDevice = .rear
-                } else if (UIImagePickerController.isCameraDeviceAvailable(.front)) {
-                    imagePicker.cameraDevice = .front
-                }
-                imagePicker.allowsEditing = edit
-                imagePicker.showsCameraControls = true
-                
-                let viewController = target as! UIViewController
-                
-                imagePicker.delegate = viewController as? (UIImagePickerControllerDelegate & UINavigationControllerDelegate)
-                viewController.present(imagePicker, animated: true)
-                
-                return true
-            }
-        }
-    }
-    
-    return false
-}
+//func PresentPhotoCamera(target: Any, edit: Bool) -> Bool {
+//    
+//    let type = kUTTypeImage as String
+//    
+//    if (UIImagePickerController.isSourceTypeAvailable(.camera)) {
+//        if let availableMediaTypes = UIImagePickerController.availableMediaTypes(for: .camera) {
+//            if (availableMediaTypes.contains(type)) {
+//                
+//                let imagePicker = UIImagePickerController()
+//                imagePicker.mediaTypes = [type]
+//                imagePicker.sourceType = .camera
+//                
+//                if (UIImagePickerController.isCameraDeviceAvailable(.rear)) {
+//                    imagePicker.cameraDevice = .rear
+//                } else if (UIImagePickerController.isCameraDeviceAvailable(.front)) {
+//                    imagePicker.cameraDevice = .front
+//                }
+//                imagePicker.allowsEditing = edit
+//                imagePicker.showsCameraControls = true
+//                
+//                let viewController = target as! UIViewController
+//                
+//                imagePicker.delegate = viewController as? (UIImagePickerControllerDelegate & UINavigationControllerDelegate)
+//                viewController.present(imagePicker, animated: true)
+//                
+//                return true
+//            }
+//        }
+//    }
+//    
+//    return false
+//}
 
 func PresentSmileCamera(target: Any) -> Bool {
     
@@ -82,39 +72,39 @@ func PresentSmileCamera(target: Any) -> Bool {
     return false
 }
 
-//-------------------------------------------------------------------------------------------------------------------------------------------------
-func PresentVideoCamera(target: Any, edit: Bool) -> Bool {
-    
-    let type = kUTTypeMovie as String
-    
-    if (UIImagePickerController.isSourceTypeAvailable(.camera)) {
-        if let availableMediaTypes = UIImagePickerController.availableMediaTypes(for: .camera) {
-            if (availableMediaTypes.contains(type)) {
-                
-                let imagePicker = UIImagePickerController()
-                imagePicker.mediaTypes = [type]
-                imagePicker.sourceType = .camera
-                imagePicker.videoMaximumDuration = TimeInterval()
-                
-                if (UIImagePickerController.isCameraDeviceAvailable(.rear)) {
-                    imagePicker.cameraDevice = .rear
-                } else if (UIImagePickerController.isCameraDeviceAvailable(.front)) {
-                    imagePicker.cameraDevice = .front
-                }
-                
-                let viewController = target as! UIViewController
-                imagePicker.allowsEditing = edit
-                imagePicker.showsCameraControls = true
-                imagePicker.delegate = viewController as? (UIImagePickerControllerDelegate & UINavigationControllerDelegate)
-                viewController.present(imagePicker, animated: true)
-                
-                return true
-            }
-        }
-    }
-    
-    return false
-}
+////-------------------------------------------------------------------------------------------------------------------------------------------------
+//func PresentVideoCamera(target: Any, edit: Bool) -> Bool {
+//    
+//    let type = kUTTypeMovie as String
+//    
+//    if (UIImagePickerController.isSourceTypeAvailable(.camera)) {
+//        if let availableMediaTypes = UIImagePickerController.availableMediaTypes(for: .camera) {
+//            if (availableMediaTypes.contains(type)) {
+//                
+//                let imagePicker = UIImagePickerController()
+//                imagePicker.mediaTypes = [type]
+//                imagePicker.sourceType = .camera
+//                imagePicker.videoMaximumDuration = TimeInterval()
+//                
+//                if (UIImagePickerController.isCameraDeviceAvailable(.rear)) {
+//                    imagePicker.cameraDevice = .rear
+//                } else if (UIImagePickerController.isCameraDeviceAvailable(.front)) {
+//                    imagePicker.cameraDevice = .front
+//                }
+//                
+//                let viewController = target as! UIViewController
+//                imagePicker.allowsEditing = edit
+//                imagePicker.showsCameraControls = true
+//                imagePicker.delegate = viewController as? (UIImagePickerControllerDelegate & UINavigationControllerDelegate)
+//                viewController.present(imagePicker, animated: true)
+//                
+//                return true
+//            }
+//        }
+//    }
+//    
+//    return false
+//}
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------
 func PresentMultiCamera(target: Any, edit: Bool) -> Bool {

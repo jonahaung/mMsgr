@@ -73,7 +73,6 @@ class MessageCell: CollectionViewCell {
     override func reload() {
         if let msg = self.msg {
             hasReadImageView.isHidden = msg.hideHasReadView
-            print("reloading, do somethiong")
         }
     }
     

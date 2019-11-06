@@ -25,6 +25,7 @@ final class MsgCellLayoutAttributes: UICollectionViewLayoutAttributes {
     var bubbleSize = CGSize.zero
     var isSender = false
     var bubbleType: BubbleType = .single
+
     
     override func copy(with zone: NSZone? = nil) -> Any {
         let copiedAttributes = super.copy(with: zone) as! MsgCellLayoutAttributes

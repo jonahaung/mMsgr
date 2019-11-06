@@ -35,6 +35,7 @@ final class ChatCollectionViewLayout: UICollectionViewFlowLayout {
         super.init()
         scrollDirection = .vertical
         minimumLineSpacing = 0
+        register(ChatHeaderLabelView.self, forDecorationViewOfKind:  ChatHeaderLabelView.reuseIdentifier)
     }
     
 
@@ -68,10 +69,15 @@ extension ChatCollectionViewLayout {
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         guard let attributesArray = super.layoutAttributesForElements(in: rect) as? [MsgCellLayoutAttributes] else { return nil }
         for attribute in attributesArray  {
-            if attribute.frame.intersects(rect) && attribute.representedElementCategory == .cell {
-                configureAttributes(attribute)
+            if attribute.frame.intersects(rect){
+                if attribute.representedElementCategory == .cell  {
+                    configureAttributes(attribute)
+                }
+                
             }
         }
+        
+        
         return attributesArray
     }
 
@@ -79,9 +85,29 @@ extension ChatCollectionViewLayout {
         if let attr = configuredAttributes[indexPath] {
             return attr
         }
-        guard let new = super.layoutAttributesForItem(at: indexPath) as? MsgCellLayoutAttributes else { return nil}
-        configureAttributes(new)
-        return new
+        return super.layoutAttributesForItem(at: indexPath)
+    }
+    
+    override func layoutAttributesForDecorationView(ofKind elementKind: String, at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
+        if elementKind == ChatHeaderLabelView.reuseIdentifier {
+            
+            let attr = MsgCellLayoutAttributes(forDecorationViewOfKind: elementKind, with: indexPath)
+            attr.zIndex = 5
+            return attr
+        }
+        return nil
+    }
+    
+    func sizeOfString(string: String, font: UIFont) -> CGSize {
+        let attributes = [NSAttributedString.Key.font: font]
+        let attString = NSAttributedString(string: string, attributes: attributes)
+        let framesetter = CTFramesetterCreateWithAttributedString(attString)
+        var size = CTFramesetterSuggestFrameSizeWithConstraints(framesetter, CFRange(location: 0,length: 0), nil, CGSize(width: .greatestFiniteMagnitude, height: font.lineHeight + 3), nil)
+        let padding = UIEdgeInsets(top: 3, left: 8, bottom: 3, right: 8)
+        size.width += padding.horizontal
+        size.height += padding.vertical
+        return size
+        
     }
 
     override func layoutAttributesForSupplementaryView(ofKind elementKind: String, at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
@@ -144,7 +170,6 @@ extension ChatCollectionViewLayout {
             configuredAttributes[indexPath] = attribute
             
         }
-
     }
     
 }

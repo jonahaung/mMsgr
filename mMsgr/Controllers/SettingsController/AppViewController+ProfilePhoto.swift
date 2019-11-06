@@ -9,7 +9,7 @@
 import UIKit
 
 
-extension AppViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+extension AppViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate, MediaPicker {
     
     func requestUpdatePhoto() {
         
@@ -17,10 +17,10 @@ extension AppViewController: UIImagePickerControllerDelegate, UINavigationContro
             guard ok == true else { return }
             let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
             let photoCamera = UIAlertAction(title: "Camera", style: .default) { [unowned self] _ in
-                _ =  PresentPhotoCamera(target: self, edit: true)
+                self.MediaPicker_OpenCamera(.PhotoCamera)
             }
             let photoLibrary = UIAlertAction(title: "Photo Library", style: .default) { [unowned self] _ in
-                _ = PresentPhotoLibrary(target: self, edit: true)
+                self.MediaPicker_OpenCamera(.PhotoLibrary)
             }
            
             alert.addAction(photoCamera)

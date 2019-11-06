@@ -79,7 +79,7 @@ extension LoginController: UITextFieldDelegate {
         
     }
 }
-extension LoginController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+extension LoginController: UIImagePickerControllerDelegate, UINavigationControllerDelegate, MediaPicker {
     
     func requestUpdatePhoto(user: User) {
         
@@ -88,10 +88,10 @@ extension LoginController: UIImagePickerControllerDelegate, UINavigationControll
         alert.set(title: "Upload Profile Photo", font: UIFont.preferredFont(forTextStyle: .title3))
         
         alert.addAction(image: nil, title: "Camera", color: nil, style: .default, isEnabled: true) { _ in
-            _ = PresentPhotoCamera(target: self, edit: true)
+            self.MediaPicker_OpenCamera(.PhotoCamera)
         }
         alert.addAction(image: nil, title: "Photo Library", color: nil, style: .default, isEnabled: true) { _ in
-            _ = PresentPhotoLibrary(target: self, edit: true)
+            self.MediaPicker_OpenCamera(.PhotoLibrary)
         }
 
         alert.addCancelAction { _ in
